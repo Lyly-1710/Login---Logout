@@ -1,9 +1,9 @@
-// validation form register and register user local storage
+
 const inputUsernameRegister = document.querySelector(".input-signup-username");
 const inputPasswordRegister = document.querySelector(".input-signup-password");
 const btnRegister = document.querySelector(".signup__signInButton");
 
-// validation form register and register user local storage
+
 
 btnRegister.addEventListener("click", (e) => {
   e.preventDefault();
@@ -21,6 +21,5 @@ btnRegister.addEventListener("click", (e) => {
     let json = JSON.stringify(user);
     localStorage.setItem(inputUsernameRegister.value, json);
     alert("Đăng Ký Thành Công");
-    window.location.href = "login.html";
   }
 });
